@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reddyz Mango Gardens - Taste the Sweetness of Nature</title>
+    <meta name="description" content="Experience the finest mangoes at Reddyz Mango Gardens. Explore our lush orchards and discover the natural sweetness.">
+    <meta name="keywords" content="mango gardens, fresh mangoes, orchards, natural fruits, Reddyz">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #343a40; /* Dark gray body text */
+            line-height: 1.6;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #28a745; /* Green accent color */
+        }
+
+        .navbar {
+            background-color: #fff !important;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-size: 1.8em;
+            color: #28a745 !important;
+            font-weight: 700;
+        }
+
+        .nav-link {
+            color: #555 !important;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #28a745 !important;
+        }
+
+        .hero {
+            background-color: #f8f9fa; /* Light gray background */
+            padding: 100px 0;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero .lead {
+            font-size: 1.2em;
+            color: #6c757d; /* Medium gray lead text */
+            margin-bottom: 30px;
+        }
+
+        .btn-primary {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+
+        .btn-primary:hover {
+            background-color: #1e7e34;
+            border-color: #1e7e34;
+        }
+
+        .btn-outline-secondary {
+            color: #28a745;
+            border-color: #28a745;
+        }
+
+        .btn-outline-secondary:hover {
+            background-color: #d4edda;
+            border-color: #d4edda;
+            color: #1e7e34;
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 0.15rem 0.5rem rgba(0, 0, 0, 0.05);
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .card-title {
+            font-size: 1.5em;
+            margin-bottom: 0.75rem;
+            color: #343a40;
+            font-weight: 600;
+        }
+
+        .card-text {
+            color: #6c757d;
+        }
+
+        .btn-sm {
+            font-size: 0.9rem;
+        }
+
+        .visit-details h3 {
+            color: #28a745;
+            margin-bottom: 0.5rem;
+        }
+
+        .map-placeholder {
+            border: 1px solid #ced4da;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            height: 400px;
+        }
+
+        .map-placeholder iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 30px auto 0;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.15rem 0.5rem rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #495057;
+            font-weight: 600;
+        }
+
+        .form-control {
+            border-radius: 0.25rem;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #f8f9fa;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Reddyz Mango Gardens</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#varieties">Our Mangoes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#visit">Visit Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1>Experience the Juicy Delight of Reddyz Mangoes</h1>
+                    <p class="lead">Discover the exquisite taste of naturally grown mangoes from our lush gardens. We are passionate about delivering the finest quality fruits, bursting with flavor and freshness.</p>
+                    <p>
+                        <a href="#varieties" class="btn btn-primary btn-lg mr-3">Explore Our Mangoes</a>
+                        <a href="#visit" class="btn btn-outline-secondary btn-lg">Plan Your Visit</a>
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/hero-mangoes.jpg" alt="A basket of fresh, ripe mangoes" class="img-fluid rounded shadow-sm" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title">About Reddyz Mango Gardens</h2>
+            <p>At Reddyz Mango Gardens, our story is rooted in a deep love for the land and a commitment to cultivating exceptional mangoes. For generations, our family has nurtured these orchards, employing sustainable practices to ensure the health of our trees and the unparalleled taste of our fruit. We believe in the simple pleasure of a perfectly ripe mango, and we strive to share that experience with you.</p>
+            <p>Our gardens are more than just a farm; they are a sanctuary where nature's bounty thrives. We carefully tend to each tree, ensuring optimal growing conditions and harvesting at the peak of ripeness. This dedication to quality is what sets Reddyz Mango Gardens apart.</p>
+        </div>
+    </section>
+
+    <section id="varieties" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Our Mango Varieties</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/alphonso.jpg" alt="Alphonso Mango" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Alphonso</h3>
+                            <p class="card-text">Known as the "King of Mangoes," the Alphonso boasts a rich, sweet flavor and a vibrant saffron hue. Its creamy texture and aromatic fragrance make it a truly exceptional variety.</p>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/banganapalli.jpg" alt="Banganapalli Mango" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Banganapalli</h3>
+                            <p class="card-text">Prized for its large size, thin skin, and fiberless pulp, the Banganapalli offers a delightful sweetness with a hint of tanginess. It's a popular choice for its versatility.</p>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/himayat.jpg" alt="Himayat Mango" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Himayat</h3>
+                            <p class="card-text">The Himayat mango is known for its distinct sweet and sour taste, along with its unique shape and vibrant color. It's a favorite among those who enjoy a complex flavor profile.</p>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="visit" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Visit Our Gardens</h2>
+            <p>Experience the beauty of our mango orchards firsthand! Take a stroll through our lush greenery, learn about our growing process, and perhaps even sample some of our fresh mangoes (seasonal). Visiting Reddyz Mango Gardens is a treat for all your senses.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="visit-details">
+                        <h3>Location:</h3>
+                        <p> [Insert Address Here], Chennai, Tamil Nadu, India</p>
+                    </div>
+                    <div class="visit-details">
+                        <h3>Hours:</h3>
+                        <p>Monday - Sunday: 9:00 AM - 5:00 PM</p>
+                    </div>
+                    <div class="visit-details">
+                        <h3>Contact:</h3>
+                        <p>Email: <a href="mailto:ranieegaorganichoney@gmail.com">ranieegaorganichoney@gmail.com</a></p>
+                        <p>Phone: <a href="tel:+91 9494199808">+91 9494199808</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="map-placeholder rounded shadow-sm">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.597448336369!2d80.2297949747638!3d13.018627293517886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266edc44593c1%3A0x1034c0b038822399!2sVadapalani%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1701177649989!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="lead text-center mb-4">Have a question or want to learn more? Reach out to us! We'd love to hear from you.</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p>&copy; 2025 Reddyz Mango Gardens. All rights reserved.</p>
+            <p>
+                <a href="#" class="mr-3">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
